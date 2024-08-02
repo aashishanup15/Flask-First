@@ -21,8 +21,5 @@ def login():
         age= int(request.form['age'])
         return login_success(name=user, x=age) 
         
-    # else:
-    #     user = request.args.get('username')
-    #     return redirect(url_for('login_success', name=user))
 if __name__ == '__main__':
     app.run()
